@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/13_SpringWithMaven.iml" filepath="$PROJECT_DIR$/13_SpringWithMaven.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../Spring Boot/POS_FRONT_END/POS_FRONT_END.iml" filepath="$PROJECT_DIR$/../../Spring Boot/POS_FRONT_END/POS_FRONT_END.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../POS_FRONTEND/POS_FRONTEND.iml" filepath="$PROJECT_DIR$/../POS_FRONTEND/POS_FRONTEND.iml" />
     </modules>
   </component>
 </project>
