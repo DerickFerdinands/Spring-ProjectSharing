@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Public+Sans:wght@600&family=Raleway:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      background-color: #FAE6E9;
+      height: 100vh;
+    }
+
+    * {
+      font-family: 'Poppins', Sans-serif;
+      font-style: normal;
+      font-weight: 600;
+
+    }
+
+    main > h1 {
+      font-family: 'Poppins', Sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 43px;
+    }
+  </style>
+</head>
+<body>
+<img alt="" class="position-absolute start-50" src="../assets/images/Group%2011.png"
+     style="width: 50%; height: 50%; z-index: -1;">
+
+<main class="container mt-5">
+  <div class="position-absolute ">
+    <button aria-controls="offcanvasWithBothOptions" class="btn btn-primary bg-transparent border-0" data-bs-target="#offcanvasWithBothOptions"
+            data-bs-toggle="offcanvas" type="button"><i
+      class="fa-solid fa-bars text-dark " style="font-size:30px;"></i></button>
+    <div aria-labelledby="offcanvasWithBothOptionsLabel" class="offcanvas offcanvas-start" data-bs-scroll="true" id="offcanvasWithBothOptions"
+         tabindex="-1">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+        <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a aria-current="page" class="nav-link " href="customers.html">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="items.html">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="orders.html">Order</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h1 class="ms-5 position-relative" style="bottom: 3px; left: 10px;">ITEMS</h1>
+  <section class="row">
+    <div class="col-sm-12 col-12 col-lg-5 mt-5 col-xl-4">
+      <h4 class="rounded-3 p-2 bg-opacity-25 bg-success"
+          style="  border: 1px solid black;">Search Item</h4>
+
+      <div class=" col-7 mt-4 mb-3 ">
+        <select aria-label="Default select example" class="form-select bg-transparent ">
+          <option class="col-8" selected>Select Name/Code</option>
+          <option value="1">Name</option>
+          <option value="3">Code</option>
+        </select>
+      </div>
+
+      <div class="form-floating input-group mt-1 mb-3 col-10">
+        <input class="form-control bg-transparent" id="floatingInput" placeholder="200016803088" type="email">
+        <label for="floatingInput">tem Name/Code</label>
+        <button class="btn btn-outline-secondary text-dark bg-opacity-75" id="button-addon2" style="background-color: #905FCAC7"
+                type="button">Search
+        </button>
+      </div>
+      <button id="btnDelete" class="btn btn-danger  me-2" type="button">Delete</button>
+      <button id="btnUpdate" class="btn btn-warning me-2" type="button">Update</button>
+      <button class="btn btn-success me-2" type="button">Clear</button>
+    </div>
+
+    <div class="row col-sm-12 col-12 col-lg-6 col-xl-6">
+      <section class="col-5"
+               style="background: url('assets/images/770e20a748c4df3906285bdf0678c073-removebg-preview.png') center; background-size: cover; height: 120%"></section>
+      <div class="col-6 position-relative " style="top:40px;">
+        <h5>Item Code</h5>
+        <h6 id="lblCode" class="text-muted">-</h6>
+
+        <h5>Item Name</h5>
+        <h6 id="lblName" class="text-muted">-</h6>
+
+        <h5>Item Description</h5>
+        <h6 id="lblDescription" class="text-muted">-</h6>
+
+          <h5>Item Buying-Price</h5>
+          <h6 id="lblbuyingPrice" class="text-muted">-</h6>
+
+          <h5>Item Selling-Price</h5>
+          <h6 id="lblSellingPrice" class="text-muted">-</h6>
+
+          <h5>Item Qty</h5>
+          <h6 id="lblQty" class="text-muted">-</h6>
+      </div>
+    </div>
+
+    <div class="col-sm-5 col-5 col-xl-2">
+      <!-- Button trigger modal -->
+      <button id="btncModal" class="btn btn-dark col-sm-12" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">+
+        Add Item
+      </button>
+
+      <!-- Modal -->
+      <div aria-hidden="true"  aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+           tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+              <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+              <section class="container">
+                <form id="itemForm">
+                <div class="form-floating mb-3">
+                  <input name="code" id="txtCode" class="form-control" id="itemCode" placeholder="I00-001" type="text">
+                  <label for="itemCode">Item Code</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input name="name" id="txtName" class="form-control" id="itemName" placeholder="Biscuits" type="text">
+                  <label for="itemName">Item Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input name="description" id="txtDescription" class="form-control" id="itemDescription" placeholder="Sample Description"
+                         type="text">
+                  <label for="itemDescription">Item Description</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input name="buyingPrice" id="txtBuyingPrice" class="form-control" id="itemPrice" placeholder="Rs.100000/=" type="text">
+                  <label for="itemPrice">Item Buying-Price</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input name="sellingPrice" id="txtSellingPrice" class="form-control" id="itemSellingPrice" placeholder="Rs.20000/=" type="text">
+                  <label for="itemSellingPrice">Item Selling-Price</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input name="qty" id="txtQty" class="form-control" id="itemQty" placeholder="1000" type="text">
+                  <label for="itemQty">Item Qty</label>
+                </div>
+                </form>
+              </section>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+              <button id="btnMSave" class="btn btn-success" type="button">Save Customer</button>
+              <button id="btnMDelete" class="btn btn-success" type="button">Delete Customer</button>
+              <button id="btnMUpdate" class="btn btn-success" type="button">Update Customer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="row mt-sm-2 ">
+    <div class="col-12   text-sm-end text-lg-start ">
+      <button id="btnGetAll" class="btn btn-primary text-sm-end " type="button">View All Items</button>
+    </div>
+    <div class="col-12 mt-5">
+      <table id="tableItem" class="table mt-3 table-hover">
+        <thead class="" style="border-radius: 5px; background-color: #F18789;">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Item Code</th>
+          <th scope="col">Item Name</th>
+          <th scope="col">Item Description</th>
+          <th scope="col">Item Buying Price</th>
+          <th scope="col">Item Selling Price</th>
+          <th scope="col">Item Qty</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+  let baseURL = "http://localhost:8080/filter/";
+
+  $('#btnGetAll').click(function () {
+
+    getAllItems();
+
+  });
+
+  getAllItems();
+
+  function  getAllItems() {
+    $('#tableItem>tbody').empty();
+    $.ajax({
+      url: baseURL+`item`,
+      dataType: 'json',
+      type:'get',
+      success: function (resp) {
+        let data = resp.data;
+        data.forEach((cus, index) => {
+          console.log(cus+"Hllo");
+          $('#tableItem').append(`<tr> <th>${(index + 1)}</th> <td>${cus.code}</td><td>${cus.name}</td><td>${cus.description}</td><td>${cus.buyingPrice}</td><td>${cus.sellingPrice}</td><td>${cus.qty}</td></th> </tr>`);
+        });
+        bindEvents();
+      }
+    });
+
+  }
+
+  function bindEvents() {
+    $('#tableItem tr').click(function () {
+      let trChildren = $(this).children();
+      $('#lblCode').text(trChildren.eq(1).text().split('\n')[0]);
+      $('#lblName').text(trChildren.eq(2).text().split('\n')[0]);
+      $('#lblDescription').text(trChildren.eq(3).text().split('\n')[0]);
+      $('#lblbuyingPrice').text(trChildren.eq(4).text().split('\n')[0]);
+      $('#lblSellingPrice').text(trChildren.eq(5).text().split('\n')[0]);
+      $('#lblQty').text(trChildren.eq(6).text().split('\n')[0]);
+    });
+  }
+
+
+  $('#btnClose').click(function () {
+    $('#modalLbl').text("Add Customer");
+    $('#btnSave').text("Save Customer");
+    $('#btnSave').css('display', 'block');
+    $('#btnMUpdate').css('display', 'block');
+    $('#btnMDelete').css('display', 'block');
+  });
+
+  $('#btncModal').click(function () {
+    $('#modalLbl').text("Add Customer");
+    $('#btnSave').text("Save Customer");
+  });
+
+  $('#btnUpdate').click(function () {
+    $('#modalLbl').text("Update Customer");
+    setFields();
+    $('#btncModal').click();
+  });
+  $('#btnDelete').click(function () {
+    $('#modalLbl').text("Delete Customer");
+    setFields();
+    $('#btncModal').click();
+  });
+
+  function setFields() {
+    $("#txtCode").val($('#lblCode').text());
+    $("#txtName").val($('#lblName').text());
+    $("#txtDescription").val($('#lblDescription').text());
+    $("#txtSellingPrice").val($('#lblSellingPrice').text().split('\n')[0]);
+    $("#txtBuyingPrice").val($('#lblbuyingPrice').text());
+    $("#txtQty").val($('#lblQty').text());
+  }
+
+  $('#btnMUpdate').click(function () {
+
+    let cus = {
+      code: $("#txtCode").val(),
+      name: $("#txtName").val(),
+      description: $("#txtDescription").val(),
+      buyingPrice: $("#txtBuyingPrice").val(),
+      sellingPrice: $("#txtSellingPrice").val(),
+      qty: $("#txtQty").val()
+    }
+
+    $.ajax({
+      url: baseURL+`item`,
+      type: 'PUT',
+      contentType: 'application/json',
+      data: JSON.stringify(cus),
+      success: function (resp) {
+        getAllItems();
+        Swal.fire(
+          resp.state,
+          resp.message,
+          'success'
+        )
+      },
+      error: function (error) {
+        let parse = JSON.parse(error.responseText);
+        Swal.fire(
+          "failed",
+          parse.message,
+          'error'
+        )
+      }
+    });
+
+  });
+
+  $('#btnMDelete').click(function () {
+    var code= $('#txtCode').val();
+    $.ajax({
+      url: baseURL+'item?code='+code,
+      type:'DELETE',
+      success: function (resp) {
+        getAllItems();
+        Swal.fire(
+          resp.state,
+          resp.message,
+          'success'
+        )
+      },
+      error: function (error) {
+        let parse = JSON.parse(error.responseText);
+        Swal.fire(
+          "failed",
+          parse.message,
+          'error'
+        )
+      }
+    });
+
+
+
+  });
+
+
+  $('#btnMSave').click(function () {
+    let formData = $('#itemForm').serialize();
+    console.log(formData);
+    $.ajax({
+      url: baseURL+`item`,
+      type: 'post',
+      data: formData,
+      success: function (resp) {
+        getAllItems();
+        Swal.fire(
+          resp.state,
+          resp.message,
+          'success'
+        )
+      },
+      error: function (error) {
+        let parse = JSON.parse(error.responseText);
+        Swal.fire(
+          "failed",
+          parse.message,
+          'error'
+        )
+      }
+    });
+
+  });
+
+
+</script>
+</body>
+</html>

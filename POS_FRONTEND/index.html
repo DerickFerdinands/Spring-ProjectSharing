@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Public+Sans:wght@600&family=Raleway:wght@500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <style>
+        body {
+            background-color: #FAE6E9;
+            height: 100vh;
+        }
+
+        * {
+            font-family: 'Poppins', Sans-serif;
+            font-style: normal;
+            font-weight: 600;
+
+        }
+
+        main > h1 {
+            font-family: 'Poppins', Sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 43px;
+        }
+    </style>
+</head>
+<body>
+<img alt="" class="position-absolute start-50" src="assets/images/Group%2011.png"
+     style="width: 50%; height: 50%; z-index: -1;">
+
+<main class="container mt-5">
+    <div class="position-absolute ">
+        <button aria-controls="offcanvasWithBothOptions" class="btn btn-primary bg-transparent border-0"
+                data-bs-target="#offcanvasWithBothOptions"
+                data-bs-toggle="offcanvas" type="button"><i
+                class="fa-solid fa-bars text-dark " style="font-size:30px;"></i></button>
+        <div aria-labelledby="offcanvasWithBothOptionsLabel" class="offcanvas offcanvas-start" data-bs-scroll="true"
+             id="offcanvasWithBothOptions"
+             tabindex="-1">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <h1 class="ms-5 position-relative" style="bottom: 3px; left: 10px;">CUSTOMERS</h1>
+    <section class="row">
+        <div class="col-sm-12 col-12 col-lg-5 mt-5 col-xl-4">
+            <h4 class="rounded-3 p-2 bg-opacity-25 bg-success"
+                style="  border: 1px solid black;">Search Customer</h4>
+
+            <div class=" col-7 mt-4 mb-3 ">
+                <select aria-label="Default select example" class="form-select bg-transparent ">
+                    <option class="col-8" selected>Select Name/NIC/Code</option>
+                    <option value="1">Name</option>
+                    <option value="2">NIC</option>
+                    <option value="3">Code</option>
+                </select>
+            </div>
+
+            <div class="form-floating input-group mt-1 mb-3 col-10">
+                <input class="form-control bg-transparent" id="floatingInput" placeholder="200016803088" type="email">
+                <label for="floatingInput">Customer Name/NIC/Code</label>
+                <button class="btn btn-outline-secondary text-dark bg-opacity-75" id="button-addon2"
+                        style="background-color: #905FCAC7"
+                        type="button">Search
+                </button>
+            </div>
+            <button class="btn btn-danger  me-2" form="customerForm" formaction="DeleteCustomerServlet" id="btnDelete"
+                    type="button">Delete
+            </button>
+            <button class="btn btn-warning me-2" id="btnUpdate" type="button">Update</button>
+            <button class="btn btn-success me-2" type="button">Clear</button>
+        </div>
+
+        <div class="row col-sm-12 col-12 col-lg-6 col-xl-6">
+            <section class="col-5"
+                     style="background: url('assets/images/37896b78d803dd8290581130b999c866-removebg-preview.png') center; background-size: cover; height: 120%"></section>
+            <div class="col-6 position-relative " style="top:40px;">
+                <h5>Customer Code</h5>
+                <h6 class="text-muted" id="lblCode"> - </h6>
+
+                <h5>Customer Name</h5>
+                <h6 class="text-muted" id="lblName"> - </h6>
+
+                <h5>Customer NIC</h5>
+                <h6 class="text-muted" id="lblNIC"> - </h6>
+
+                <h5>Customer DOB</h5>
+                <h6 class="text-muted" id="lblDOB"> - </h6>
+
+                <h5>Customer Address</h5>
+                <h6 class="text-muted" id="lblAddress"> - </h6>
+
+                <h5>Customer Salary</h5>
+                <h6 class="text-muted" id="lblSalary"> - </h6>
+            </div>
+        </div>
+
+        <div class="col-sm-5 col-5 col-xl-2">
+            <!-- Button trigger modal -->
+            <button class="btn btn-dark col-sm-12" data-bs-target="#exampleModal" data-bs-toggle="modal" id="btncModal"
+                    type="button">+
+                Add Customer
+            </button>
+
+            <!-- Modal -->
+            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+                 tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLbl">Add Customer</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="container">
+                                <form id="customerForm">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="customerCode" name="code" placeholder="C00-001"
+                                               type="text">
+                                        <label for="customerCode">Customer Code</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="customerName" name="name"
+                                               placeholder="John Santiago" type="text">
+                                        <label for="customerName">Customer Name</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="customerNIC" name="nic"
+                                               placeholder="200016803088" type="text">
+                                        <label for="customerNIC">Customer NIC</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="customerDOB" name="dob"
+                                               placeholder="John Santiago" type="date">
+                                        <label for="customerDOB">Customer DOB</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="customerAddress" name="address"
+                                               placeholder="Colombia" type="text">
+                                        <label for="customerAddress">Customer Address</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="customerSalary" name="salary"
+                                               placeholder="120,000,000" type="text">
+                                        <label for="customerSalary">Customer Salary</label>
+                                    </div>
+                                    <button class="btn btn-success" id="btnSave" type="button">
+                                        Save Customer
+                                    </button>
+                                    <button class="btn btn-success" id="btnMUpdate" type="button">
+                                        Update Customer
+                                    </button>
+                                    <button class="btn btn-success" id="btnMDelete" type="button">
+                                        Delete Customer
+                                    </button>
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose"
+                                            type="button">Close
+                                    </button>
+
+                                </form>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="row mt-sm-2 ">
+        <div class="col-12   text-sm-end text-lg-start ">
+            <button class="btn btn-primary text-sm-end "
+                    id="btnGetAll" type="button">View All Customers
+            </button>
+        </div>
+        <div class="col-12 mt-5">
+            <table class="table mt-3 table-hover" id="tableCustomer">
+                <thead class="" style="border-radius: 5px; background-color: #F18789;">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Customer Code</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Customer NIC</th>
+                    <th scope="col">Customer DOB</th>
+                    <th scope="col">Customer Address</th>
+                    <th scope="col">Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+  let baseURL = "http://localhost:8080/13_SpringWithMaven_war_exploded/";
+    $('#btnGetAll').click(function () {
+
+        getAllCustomers();
+
+    });
+
+    getAllCustomers();
+
+    function  getAllCustomers() {
+        $('#tableCustomer>tbody').empty();
+        $.ajax({
+            url: baseURL+`customer`,
+            dataType: 'json',
+            success: function (resp) {
+              /*  let data = resp.data;
+              console.log(resp.data+" ");*/
+                resp.forEach((cus, index) => {
+                    $('#tableCustomer').append(`<tr> <th>${(index + 1)}</th> <td>${cus.code}</td><td>${cus.name}</td><td>${cus.nic}</td><td>${cus.dob}</td><td>${cus.address}</td><td>${cus.salary}</td></th> </tr>`);
+                });
+                bindEvents();
+            }
+        });
+
+    }
+
+    function bindEvents() {
+        $('#tableCustomer tr').click(function () {
+            let trChildren = $(this).children();
+            $('#lblCode').text(trChildren.eq(1).text().split('\n')[0]);
+            $('#lblName').text(trChildren.eq(2).text().split('\n')[0]);
+            $('#lblNIC').text(trChildren.eq(3).text().split('\n')[0]);
+            $('#lblDOB').text(trChildren.eq(4).text().split('\n')[0]);
+            $('#lblAddress').text(trChildren.eq(5).text().split('\n')[0]);
+            $('#lblSalary').text(trChildren.eq(6).text().split('\n')[0]);
+        });
+    }
+
+
+    $('#btnClose').click(function () {
+        $('#modalLbl').text("Add Customer");
+        $('#btnSave').text("Save Customer");
+        $('#btnSave').css('display', 'block');
+        $('#btnMUpdate').css('display', 'block');
+        $('#btnMDelete').css('display', 'block');
+    });
+
+    $('#btncModal').click(function () {
+        $('#modalLbl').text("Add Customer");
+        $('#btnSave').text("Save Customer");
+    });
+
+    $('#btnUpdate').click(function () {
+        $('#modalLbl').text("Update Customer");
+        setFields();
+        $('#btncModal').click();
+    });
+    $('#btnDelete').click(function () {
+        $('#modalLbl').text("Delete Customer");
+        setFields();
+        $('#btncModal').click();
+    });
+
+    function setFields() {
+        $("#customerCode").val($('#lblCode').text());
+        $("#customerName").val($('#lblName').text());
+        $("#customerNIC").val($('#lblNIC').text());
+        $("#customerDOB").val($('#lblDOB').text().split('\n')[0]);
+        $("#customerAddress").val($('#lblAddress').text());
+        $("#customerSalary").val($('#lblSalary').text());
+    }
+
+    $('#btnMUpdate').click(function () {
+
+        let cus = {
+            code: $("#customerCode").val(),
+            name: $("#customerName").val(),
+            nic: $("#customerNIC").val(),
+            dob: $("#customerDOB").val(),
+            address: $("#customerAddress").val(),
+            salary: $("#customerSalary").val()
+        }
+
+        $.ajax({
+            url: baseURL+`customer`,
+            type: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(cus),
+            success: function (resp) {
+                getAllCustomers();
+                Swal.fire(
+                    resp.state,
+                    resp.message,
+                    'success'
+                )
+            },
+            error: function (error) {
+                let parse = JSON.parse(error.responseText);
+                Swal.fire(
+                    "failed",
+                    parse.message,
+                    'error'
+                )
+            }
+        });
+
+    });
+
+    $('#btnMDelete').click(function () {
+     var code= $('#customerCode').val();
+        $.ajax({
+            url: baseURL+'customer?code='+code,
+            type:'DELETE',
+            success: function (resp) {
+                getAllCustomers();
+                Swal.fire(
+                    resp.state,
+                    resp.message,
+                    'success'
+                )
+            },
+            error: function (error) {
+                let parse = JSON.parse(error.responseText);
+                Swal.fire(
+                    "failed",
+                    parse.message,
+                    'error'
+                )
+            }
+        });
+
+
+
+    });
+
+
+    $('#btnSave').click(function () {
+        let formData = $('#customerForm').serialize();
+        $.ajax({
+            url: baseURL+`customer`,
+            type: 'post',
+            data: formData,
+            success: function (resp) {
+                getAllCustomers();
+                Swal.fire(
+                    resp.code,
+                    resp.message,
+                    'success'
+                )
+            },
+            error: function (error) {
+              console.log(error.responseText);
+                let parse = JSON.parse(error.responseText);
+
+              console.log(parse);
+              /*  Swal.fire(
+                    "failed",
+                    parse.message,
+                    'error'
+                )*/
+            }
+        });
+
+    });
+
+
+</script>
+</body>
+</html>
