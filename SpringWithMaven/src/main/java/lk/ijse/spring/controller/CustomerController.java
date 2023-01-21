@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class CustomerController {
 
     @GetMapping
-    public ArrayList<CustomerDTO> getCustomers() throws ClassNotFoundException, SQLException {
+    public ResponseUtil getCustomers() throws ClassNotFoundException, SQLException {
         ArrayList<CustomerDTO> customers = new ArrayList<>();
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection root = DriverManager.getConnection("jdbc:mysql://localhost:3306/ferdfolio", "root", "1234");
@@ -22,7 +22,7 @@ public class CustomerController {
         while (resultSet.next()) {
             customers.add(new CustomerDTO(resultSet.getString(1), resultSet.getString(2), resultSet.getString(3), resultSet.getDate(4) + "", resultSet.getString(5), resultSet.getString(6) + ""));
         }
-        return customers;
+        return new ResponseUtil("200", "Customer Saved!", customers);
     }
 
     @PostMapping
