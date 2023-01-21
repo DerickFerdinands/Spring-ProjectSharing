@@ -226,7 +226,7 @@
             success: function (resp) {
               /*  let data = resp.data;
               console.log(resp.data+" ");*/
-                resp.forEach((cus, index) => {
+                resp.data.forEach((cus, index) => {
                     $('#tableCustomer').append(`<tr> <th>${(index + 1)}</th> <td>${cus.code}</td><td>${cus.name}</td><td>${cus.nic}</td><td>${cus.dob}</td><td>${cus.address}</td><td>${cus.salary}</td></th> </tr>`);
                 });
                 bindEvents();
