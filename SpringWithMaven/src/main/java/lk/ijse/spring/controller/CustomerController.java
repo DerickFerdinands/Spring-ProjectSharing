@@ -2,6 +2,7 @@ package lk.ijse.spring.controller;
 
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.util.ResponseUtil;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.*;
@@ -22,7 +23,7 @@ public class CustomerController {
         while (resultSet.next()) {
             customers.add(new CustomerDTO(resultSet.getString(1), resultSet.getString(2), resultSet.getString(3), resultSet.getDate(4) + "", resultSet.getString(5), resultSet.getString(6) + ""));
         }
-        return new ResponseUtil("200", "Customer Saved!", customers);
+        return new ResponseUtil("200", "Successful!", customers);
     }
 
     @PostMapping
@@ -66,6 +67,7 @@ public class CustomerController {
     }
 
     @DeleteMapping
+
     public ResponseUtil deleteCustomer(String code){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -76,7 +78,9 @@ public class CustomerController {
             return new ResponseUtil("200", "Customer Deleted!", code);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
+
             return new ResponseUtil("400", e.getMessage(), code);
+
         }
     }
 }
