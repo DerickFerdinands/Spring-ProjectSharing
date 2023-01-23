@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3de4e8d7-1582-4409-aa5a-2256dab9c0ca" name="Default Changelist" comment="" />
+    <list default="true" id="3de4e8d7-1582-4409-aa5a-2256dab9c0ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/src/main/java/lk/ijse/spring/controller/PurchaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/src/main/java/lk/ijse/spring/controller/PurchaseController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +26,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringWithMaven" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -31,6 +37,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674049445238</updated>
       <workItem from="1674049447353" duration="28000" />
+      <workItem from="1674284764528" duration="31000" />
     </task>
     <servers />
   </component>
