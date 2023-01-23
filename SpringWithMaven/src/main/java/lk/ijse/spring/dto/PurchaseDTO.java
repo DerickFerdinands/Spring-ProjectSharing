@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class PurchaseDTO {
     private String oid;
-    private LocalDate date;
+    private String date;
     private String cusID;
     private ArrayList<PurchaseDetailDTO> purchaseDetails;
 
@@ -27,11 +27,11 @@ public class PurchaseDTO {
         this.oid = oid;
     }
 
-    public LocalDate getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -54,7 +54,7 @@ public class PurchaseDTO {
     public PurchaseDTO() {
     }
 
-    public PurchaseDTO(String oid, LocalDate date, String cusID, ArrayList<PurchaseDetailDTO> purchaseDetails) {
+    public PurchaseDTO(String oid, String date, String cusID, ArrayList<PurchaseDetailDTO> purchaseDetails) {
         this.oid = oid;
         this.date = date;
         this.cusID = cusID;

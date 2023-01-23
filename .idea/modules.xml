@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Spring-ProjectSharing.iml" filepath="$PROJECT_DIR$/.idea/Spring-ProjectSharing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringWithMaven/13_SpringWithMaven.iml" filepath="$PROJECT_DIR$/SpringWithMaven/13_SpringWithMaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POS_FRONTEND/POS_FRONTEND.iml" filepath="$PROJECT_DIR$/POS_FRONTEND/POS_FRONTEND.iml" />
     </modules>
   </component>
 </project>

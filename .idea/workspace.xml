@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="13_SpringWithMaven:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3de4e8d7-1582-4409-aa5a-2256dab9c0ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/POS_FRONTEND.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/POS_FRONTEND.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/13_SpringWithMaven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/13_SpringWithMaven.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/src/main/java/lk/ijse/spring/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/src/main/java/lk/ijse/spring/WebAppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringWithMaven/src/main/java/lk/ijse/spring/controller/PurchaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/src/main/java/lk/ijse/spring/controller/PurchaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/src/main/java/lk/ijse/spring/dto/PurchaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/src/main/java/lk/ijse/spring/dto/PurchaseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/target/13_SpringWithMaven-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/target/13_SpringWithMaven-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/WebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/target/13_SpringWithMaven-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/PurchaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/target/13_SpringWithMaven-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/PurchaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/target/13_SpringWithMaven-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/dto/PurchaseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/target/13_SpringWithMaven-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/dto/PurchaseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/target/classes/lk/ijse/spring/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/target/classes/lk/ijse/spring/WebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/target/classes/lk/ijse/spring/controller/PurchaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/target/classes/lk/ijse/spring/controller/PurchaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithMaven/target/classes/lk/ijse/spring/dto/PurchaseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithMaven/target/classes/lk/ijse/spring/dto/PurchaseDTO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,18 +32,119 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="2KVAb5ynjLtsVxl0eExMPsxPdqv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringWithMaven" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/POS_FRONTEND" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.20509383" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.84" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.84" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/13_SpringWithMaven_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="13_SpringWithMaven:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/13_SpringWithMaven_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="33ffab1b-5756-471f-9627-38514f53f01e" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50757" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="13_SpringWithMaven:war exploded" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -38,6 +156,8 @@
       <updated>1674049445238</updated>
       <workItem from="1674049447353" duration="28000" />
       <workItem from="1674284764528" duration="31000" />
+      <workItem from="1674473539775" duration="53000" />
+      <workItem from="1674473605654" duration="556000" />
     </task>
     <servers />
   </component>
