@@ -384,6 +384,9 @@
             let itPrice = $("#orderTable").children().eq(i).children(":eq(3)").text();
             array.push({code: itCode, qty: itQty, price: itPrice});
         }
+        array.forEach((value, index) => {
+          console.log(value.code)
+        })
         return array;
     }
 

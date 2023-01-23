@@ -26,14 +26,18 @@ public class PurchaseController {
             preparedStatement.setObject(2, dto.getCusID());
             preparedStatement.setObject(3, dto.getDate());
             int i = preparedStatement.executeUpdate();
+            System.out.println(dto.getOrderDetails().size());
             if (i > 0) {
-                for (PurchaseDetailDTO pd : dto.getPurchaseDetails()) {
-                    preparedStatement = root.prepareStatement("INSERT INTO orderDetail VALUES (?,?,?,?)");
-                    preparedStatement.setObject(1, dto.getOid());
-                    preparedStatement.setObject(2, pd.getCode());
-                    preparedStatement.setObject(3, pd.getQty());
-                    preparedStatement.setObject(4, pd.getPrice());
-                    i = preparedStatement.executeUpdate();
+                System.out.println("Order Saved!");
+
+                for (PurchaseDetailDTO pd : dto.getOrderDetails()) {
+                    PreparedStatement preparedStatement1 = root.prepareStatement("INSERT INTO orderDetail VALUES (?,?,?,?)");
+                    preparedStatement1.setObject(1, dto.getOid());
+                    preparedStatement1.setObject(2, pd.getCode());
+                    preparedStatement1.setObject(3, pd.getQty());
+                    preparedStatement1.setObject(4, pd.getPrice());
+                    i = preparedStatement1.executeUpdate();
+                    System.out.println(pd);
                     if (i > 0) {
                         preparedStatement = root.prepareStatement("UPDATE item SET qty=qty-? WHERE code=?");
                         preparedStatement.setObject(1, pd.getQty());
@@ -43,12 +47,16 @@ public class PurchaseController {
                             root.rollback();
                             root.setAutoCommit(true);
                         }
+                        System.out.println("Item Saved");
                     }
-                    if (root.getAutoCommit()) {
+                    if (root.getAutoCommit()==true) {
+                        System.out.println("Failed");
                         break;
                     }
                 }
+                System.out.println("Loop Completed");
                 if (!root.getAutoCommit()) {
+                    System.out.println("success!");
                     root.commit();
                     root.setAutoCommit(true);
                 }
@@ -62,5 +70,8 @@ public class PurchaseController {
             e.printStackTrace();
             return new ResponseUtil("400", e.getMessage(), dto);
         }
+   /*     System.out.println(dto);
+        System.out.println(dto.getOrderDetails());
+        return new ResponseUtil("400", "Done", dto);*/
     }
 }

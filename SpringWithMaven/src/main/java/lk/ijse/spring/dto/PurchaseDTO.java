@@ -7,15 +7,25 @@ public class PurchaseDTO {
     private String oid;
     private String date;
     private String cusID;
-    private ArrayList<PurchaseDetailDTO> purchaseDetails;
+    private ArrayList<PurchaseDetailDTO> orderDetails;
+
+    public PurchaseDTO() {
+    }
+
+    public PurchaseDTO(String oid, String date, String cusID, ArrayList<PurchaseDetailDTO> orderDetails) {
+        this.oid = oid;
+        this.date = date;
+        this.cusID = cusID;
+        this.orderDetails = orderDetails;
+    }
 
     @Override
     public String toString() {
         return "PurchaseDTO{" +
                 "oid='" + oid + '\'' +
-                ", date=" + date +
+                ", date='" + date + '\'' +
                 ", cusID='" + cusID + '\'' +
-                ", purchaseDetails=" + purchaseDetails +
+                ", orderDetails=" + orderDetails +
                 '}';
     }
 
@@ -43,21 +53,11 @@ public class PurchaseDTO {
         this.cusID = cusID;
     }
 
-    public ArrayList<PurchaseDetailDTO> getPurchaseDetails() {
-        return purchaseDetails;
+    public ArrayList<PurchaseDetailDTO> getOrderDetails() {
+        return orderDetails;
     }
 
-    public void setPurchaseDetails(ArrayList<PurchaseDetailDTO> purchaseDetails) {
-        this.purchaseDetails = purchaseDetails;
-    }
-
-    public PurchaseDTO() {
-    }
-
-    public PurchaseDTO(String oid, String date, String cusID, ArrayList<PurchaseDetailDTO> purchaseDetails) {
-        this.oid = oid;
-        this.date = date;
-        this.cusID = cusID;
-        this.purchaseDetails = purchaseDetails;
+    public void setOrderDetails(ArrayList<PurchaseDetailDTO> orderDetails) {
+        this.orderDetails = orderDetails;
     }
 }
