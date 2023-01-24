@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3de4e8d7-1582-4409-aa5a-2256dab9c0ca" name="Default Changelist" comment="" />
+    <list default="true" id="3de4e8d7-1582-4409-aa5a-2256dab9c0ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,12 +49,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20509383" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\clones\Spring-ProjectSharing\14_Spring-Data-JPA\src\main\java\lk\ijse\spring" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -64,12 +74,12 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.84" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.84" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/13_SpringWithMaven_war_exploded/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/14_Spring_Data_JPA_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="13_SpringWithMaven:war exploded">
+        <artifact name="14_Spring-Data-JPA:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/13_SpringWithMaven_war_exploded" />
+            <option name="CONTEXT_PATH" value="/14_Spring_Data_JPA_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -147,7 +157,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="13_SpringWithMaven:war exploded" />
+          <artifact name="14_Spring-Data-JPA:war exploded" />
         </option>
       </method>
     </configuration>
@@ -165,7 +175,7 @@
       <workItem from="1674473539775" duration="53000" />
       <workItem from="1674473605654" duration="556000" />
       <workItem from="1674482741696" duration="3543000" />
-      <workItem from="1674527059177" duration="5022000" />
+      <workItem from="1674527059177" duration="5709000" />
     </task>
     <servers />
   </component>
