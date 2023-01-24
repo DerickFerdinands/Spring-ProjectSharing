@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="13_SpringWithMaven:war exploded" />
+      <artifact name="14_Spring-Data-JPA:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3de4e8d7-1582-4409-aa5a-2256dab9c0ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POS_FRONTEND/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POS_FRONTEND/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/items.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" afterDir="false" />
@@ -175,7 +176,7 @@
       <workItem from="1674473539775" duration="53000" />
       <workItem from="1674473605654" duration="556000" />
       <workItem from="1674482741696" duration="3543000" />
-      <workItem from="1674527059177" duration="5709000" />
+      <workItem from="1674527059177" duration="6289000" />
     </task>
     <servers />
   </component>
