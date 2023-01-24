@@ -6,7 +6,7 @@ import javax.persistence.Id;
 @Entity
 public class Customer {
     @Id
-    private String id;
+    private String code;
     private String name;
     private String nic;
     private String dob;
@@ -19,7 +19,7 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                "id='" + id + '\'' +
+                "code='" + code + '\'' +
                 ", name='" + name + '\'' +
                 ", nic='" + nic + '\'' +
                 ", dob='" + dob + '\'' +
@@ -28,12 +28,12 @@ public class Customer {
                 '}';
     }
 
-    public String getId() {
-        return id;
+    public String getCode() {
+        return code;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getName() {
@@ -76,8 +76,8 @@ public class Customer {
         this.salary = salary;
     }
 
-    public Customer(String id, String name, String nic, String dob, String address, String salary) {
-        this.id = id;
+    public Customer(String code, String name, String nic, String dob, String address, String salary) {
+        this.code = code;
         this.name = name;
         this.nic = nic;
         this.dob = dob;

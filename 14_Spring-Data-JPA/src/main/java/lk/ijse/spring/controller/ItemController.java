@@ -2,84 +2,45 @@ package lk.ijse.spring.controller;
 
 
 import lk.ijse.spring.dto.ItemDTO;
+import lk.ijse.spring.entity.Item;
+import lk.ijse.spring.repo.ItemRepo;
 import lk.ijse.spring.util.ResponseUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 @CrossOrigin
 @RestController
 @RequestMapping("/item")
 public class ItemController {
+    @Autowired
+    ItemRepo repo;
 
     @GetMapping
-    public ResponseUtil getItems() throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection root = DriverManager.getConnection("jdbc:mysql://localhost:3306/ferdfolio", "root", "1234");
-        ResultSet resultSet = root.prepareStatement("SELECT * FROM Item").executeQuery();
-        ArrayList<ItemDTO> items = new ArrayList<>();
-        while (resultSet.next()) {
-            items.add(new ItemDTO(resultSet.getString(1), resultSet.getString(2), resultSet.getString(3), resultSet.getInt(4), resultSet.getInt(5), resultSet.getInt(6)));
-        }
-        return new ResponseUtil("200", "Successful!", items);
+    public ResponseUtil getItems() {
+        List<Item> all = repo.findAll();
+        return new ResponseUtil("200", "Successful!", all);
     }
 
     @PostMapping
     public ResponseUtil addItem(ItemDTO dto) {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection root = DriverManager.getConnection("jdbc:mysql://localhost:3306/ferdfolio", "root", "1234");
-            PreparedStatement preparedStatement = root.prepareStatement("INSERT INTO Item VALUES (?,?,?,?,?,?)");
-            preparedStatement.setObject(1, dto.getCode());
-            preparedStatement.setObject(2, dto.getName());
-            preparedStatement.setObject(3, dto.getDescription());
-            preparedStatement.setObject(4, dto.getBuyingPrice());
-            preparedStatement.setObject(5, dto.getSellingPrice());
-            preparedStatement.setObject(6, dto.getQty());
-            int i = preparedStatement.executeUpdate();
-            return new ResponseUtil("200", "Item Saved!", dto);
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-            return new ResponseUtil("400", e.getMessage(), dto);
-        }
+        repo.save(new Item(dto.getCode(), dto.getName(), dto.getDescription(), dto.getBuyingPrice(), dto.getSellingPrice(), dto.getQty()));
+        return new ResponseUtil("200", "Item Saved!", dto);
     }
 
 
     @PutMapping
     public ResponseUtil updateItem(@RequestBody ItemDTO dto) {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection root = DriverManager.getConnection("jdbc:mysql://localhost:3306/ferdfolio", "root", "1234");
-            PreparedStatement preparedStatement = root.prepareStatement("UPDATE Item SET name=?, description=?, buyingprice=?, sellingprice=?, qty=? WHERE code=?");
-            preparedStatement.setObject(1, dto.getName());
-            preparedStatement.setObject(2, dto.getDescription());
-            preparedStatement.setObject(3, dto.getBuyingPrice());
-            preparedStatement.setObject(4, dto.getSellingPrice());
-            preparedStatement.setObject(5, dto.getQty());
-            preparedStatement.setObject(6, dto.getCode());
-            int i = preparedStatement.executeUpdate();
-            return new ResponseUtil("200", "Item Updated!", dto);
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-            return new ResponseUtil("400", e.getMessage(), dto);
-        }
+        repo.save(new Item(dto.getCode(), dto.getName(), dto.getDescription(), dto.getBuyingPrice(), dto.getSellingPrice(), dto.getQty()));
+        return new ResponseUtil("200", "Item Updated!", dto);
     }
 
     @DeleteMapping
-    public ResponseUtil deleteItem(String code ) {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection root = DriverManager.getConnection("jdbc:mysql://localhost:3306/ferdfolio", "root", "1234");
-            PreparedStatement preparedStatement = root.prepareStatement("DELETE FROM item WHERE code=?");
-            preparedStatement.setObject(1,code);
-            int i = preparedStatement.executeUpdate();
-            return new ResponseUtil("200", "Item Deleted!", code);
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-
-            return new ResponseUtil("400", e.getMessage(), code);
-
-        }
+    public ResponseUtil deleteItem(String code) {
+        repo.deleteById(code);
+        return new ResponseUtil("200", "Item Deleted!", code);
     }
 }
