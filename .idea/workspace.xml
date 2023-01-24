@@ -10,13 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3de4e8d7-1582-4409-aa5a-2256dab9c0ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/128589c0-c2b1-4b73-a700-08712a34bd9f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/128589c0-c2b1-4b73-a700-08712a34bd9f/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/128589c0-c2b1-4b73-a700-08712a34bd9f/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/128589c0-c2b1-4b73-a700-08712a34bd9f/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/128589c0-c2b1-4b73-a700-08712a34bd9f/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/config/WebAppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +163,7 @@
       <workItem from="1674473605654" duration="556000" />
       <workItem from="1674482741696" duration="3543000" />
       <workItem from="1674527059177" duration="19710000" />
-      <workItem from="1674559497097" duration="907000" />
+      <workItem from="1674559497097" duration="2536000" />
     </task>
     <servers />
   </component>
