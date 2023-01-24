@@ -13,22 +13,26 @@ import java.util.ArrayList;
 
 @Service
 @Transactional
-public class ItemServiceImpl {
+public class ItemServiceImpl implements ItemService{
 
     @Autowired
     ItemRepo repo;
     @Autowired
     ModelMapper mapper;
 
+    @Override
     public void saveItem(ItemDTO dto){
         repo.save(mapper.map(dto, Item.class));
     }
+    @Override
     public void updateItem(ItemDTO dto){
         repo.save(mapper.map(dto, Item.class));
     }
+    @Override
     public void deleteItem(String code){
         repo.deleteById(code);
     }
+    @Override
     public ArrayList<ItemDTO> getAllItems(){
         return mapper.map(repo.findAll(), new TypeToken<ArrayList<ItemDTO>>(){}.getType());
     }

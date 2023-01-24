@@ -1,6 +1,5 @@
 package lk.ijse.spring.service;
 
-import jdk.nashorn.internal.parser.TokenType;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.entity.Customer;
 import lk.ijse.spring.repo.CustomerRepo;
@@ -15,27 +14,31 @@ import java.util.List;
 
 @Service
 @Transactional
-public class CustomerServiceImpl {
+public class CustomerServiceImpl implements CustomerService {
     @Autowired
     CustomerRepo repo;
     @Autowired
     ModelMapper mapper;
 
+    @Override
     public void addCustomer(CustomerDTO dto) {
-        repo.save(mapper.map(dto,Customer.class));
+        repo.save(mapper.map(dto, Customer.class));
     }
 
+    @Override
     public void deleteCustomer(String code) {
         repo.deleteById(code);
     }
 
+    @Override
     public void updateCustomer(CustomerDTO dto) {
-        repo.save(mapper.map(dto,Customer.class));
+        repo.save(mapper.map(dto, Customer.class));
     }
 
-    public ArrayList<CustomerDTO> getAllCustomers(){
+    @Override
+    public ArrayList<CustomerDTO> getAllCustomers() {
         List<Customer> all = repo.findAll();
-        return mapper.map(all,new TypeToken<ArrayList<CustomerDTO>>(){}.getType());
-
+        return mapper.map(all, new TypeToken<ArrayList<CustomerDTO>>() {
+        }.getType());
     }
 }

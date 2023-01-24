@@ -2,6 +2,7 @@ package lk.ijse.spring.controller;
 
 
 import lk.ijse.spring.dto.ItemDTO;
+import lk.ijse.spring.service.ItemService;
 import lk.ijse.spring.service.ItemServiceImpl;
 import lk.ijse.spring.util.ResponseUtil;
 import org.modelmapper.ModelMapper;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/item")
 public class ItemController {
     @Autowired
-    ItemServiceImpl impl;
+    ItemService impl;
     @Autowired
     ModelMapper mapper;
 

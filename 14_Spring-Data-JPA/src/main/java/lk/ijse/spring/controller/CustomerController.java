@@ -3,6 +3,7 @@ package lk.ijse.spring.controller;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.entity.Customer;
 import lk.ijse.spring.repo.CustomerRepo;
+import lk.ijse.spring.service.CustomerService;
 import lk.ijse.spring.service.CustomerServiceImpl;
 import lk.ijse.spring.util.ResponseUtil;
 import org.modelmapper.ModelMapper;
@@ -18,7 +19,7 @@ import java.util.List;
 @CrossOrigin
 public class CustomerController {
     @Autowired
-    CustomerServiceImpl impl;
+    CustomerService impl;
     @Autowired
     ModelMapper mapper;
     @GetMapping
