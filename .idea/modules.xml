@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringWithMaven/13_SpringWithMaven.iml" filepath="$PROJECT_DIR$/SpringWithMaven/13_SpringWithMaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14_Spring-Data-JPA/14_Spring-Data-JPA.iml" filepath="$PROJECT_DIR$/14_Spring-Data-JPA/14_Spring-Data-JPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/POS_FRONTEND/POS_FRONTEND.iml" filepath="$PROJECT_DIR$/POS_FRONTEND/POS_FRONTEND.iml" />
     </modules>
   </component>
