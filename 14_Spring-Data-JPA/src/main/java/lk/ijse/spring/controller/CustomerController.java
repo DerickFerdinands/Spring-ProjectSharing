@@ -4,6 +4,7 @@ import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.entity.Customer;
 import lk.ijse.spring.repo.CustomerRepo;
 import lk.ijse.spring.util.ResponseUtil;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +18,8 @@ import java.util.List;
 public class CustomerController {
     @Autowired
     CustomerRepo repo;
-
+    @Autowired
+    ModelMapper mapper;
     @GetMapping
     public ResponseUtil getCustomers() {
         List<Customer> all = repo.findAll();
@@ -26,7 +28,7 @@ public class CustomerController {
 
     @PostMapping
     public ResponseUtil saveCustomer(CustomerDTO dto) {
-        Customer customer = new Customer(dto.getCode(), dto.getName(), dto.getNic(), dto.getDob(), dto.getAddress(), dto.getSalary());
+        Customer customer = mapper.map(dto,Customer.class);
         repo.save(customer);
         return new ResponseUtil("200", "Customer Saved!", dto);
 
@@ -34,7 +36,7 @@ public class CustomerController {
 
     @PutMapping
     public ResponseUtil updateCustomer(@RequestBody CustomerDTO dto) {
-        Customer customer = new Customer(dto.getCode(), dto.getName(), dto.getNic(), dto.getDob(), dto.getAddress(), dto.getSalary());
+        Customer customer = mapper.map(dto,Customer.class);
         repo.save(customer);
         return new ResponseUtil("200", "Customer Updated!", dto);
     }
