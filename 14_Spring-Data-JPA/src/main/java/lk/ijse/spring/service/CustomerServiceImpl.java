@@ -30,18 +30,23 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void deleteCustomer(String code) {
+        if(!repo.existsById(code)){
+            throw new RuntimeException("Customer "+code+" Does Not Exist!");
+        }
         repo.deleteById(code);
     }
 
     @Override
     public void updateCustomer(CustomerDTO dto) {
+        if(!repo.existsById(dto.getCode())){
+            throw new RuntimeException("Customer "+dto.getCode()+" Does Not Exist!");
+        }
         repo.save(mapper.map(dto, Customer.class));
     }
 
     @Override
     public ArrayList<CustomerDTO> getAllCustomers() {
         List<Customer> all = repo.findAll();
-        return mapper.map(all, new TypeToken<ArrayList<CustomerDTO>>() {
-        }.getType());
+        return mapper.map(all, new TypeToken<ArrayList<CustomerDTO>>() {}.getType());
     }
 }
