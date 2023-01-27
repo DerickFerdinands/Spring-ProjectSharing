@@ -2,8 +2,11 @@ package lk.ijse.spring.entity;
 
 import lombok.*;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -18,6 +21,8 @@ public class Customer {
     private String dob;
     private String address;
     private String salary;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "customer")
+    private List<Orders> ordersList;
 
 
 }
