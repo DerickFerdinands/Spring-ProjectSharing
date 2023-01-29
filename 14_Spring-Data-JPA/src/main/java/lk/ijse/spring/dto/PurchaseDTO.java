@@ -16,4 +16,5 @@ public class PurchaseDTO {
     private String date;
     private String cusID;
     private ArrayList<PurchaseDetailDTO> orderDetails;
+
 }

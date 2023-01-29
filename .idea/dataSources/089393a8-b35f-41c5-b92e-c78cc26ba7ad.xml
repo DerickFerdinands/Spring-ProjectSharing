@@ -979,35 +979,145 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Plugin>caching_sha2_password</Plugin>
     </user>
     <table id="287" parent="7" name="customer"/>
-    <column id="288" parent="287" name="id">
+    <table id="288" parent="7" name="item"/>
+    <table id="289" parent="7" name="orderdetail"/>
+    <table id="290" parent="7" name="orders"/>
+    <column id="291" parent="287" name="code">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="289" parent="287" name="address">
+    <column id="292" parent="287" name="address">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="290" parent="287" name="dob">
+    <column id="293" parent="287" name="dob">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="291" parent="287" name="name">
+    <column id="294" parent="287" name="name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="292" parent="287" name="nic">
+    <column id="295" parent="287" name="nic">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="293" parent="287" name="salary">
+    <column id="296" parent="287" name="salary">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="294" parent="287" name="PRIMARY">
+    <key id="297" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>code</ColNames>
       <Primary>1</Primary>
     </key>
+    <column id="298" parent="288" name="code">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="299" parent="288" name="Description">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="300" parent="288" name="buyingPrice">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="301" parent="288" name="name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="302" parent="288" name="qty">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="303" parent="288" name="sellingPrice">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="304" parent="288" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>code</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="305" parent="289" name="item">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="306" parent="289" name="orderId">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="307" parent="289" name="qty">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="308" parent="289" name="item_code">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="309" parent="289" name="orderId_orderId">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <index id="310" parent="289" name="FKos0jfcy9wj0u7k2cpqwn41l4t">
+      <ColNames>item_code</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="311" parent="289" name="FKesbiv7as7o5yfxapkrhab9dgk">
+      <ColNames>orderId_orderId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="312" parent="289" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>item
+orderId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="313" parent="289" name="FKos0jfcy9wj0u7k2cpqwn41l4t">
+      <ColNames>item_code</ColNames>
+      <RefTableName>item</RefTableName>
+      <RefColNames>code</RefColNames>
+    </foreign-key>
+    <foreign-key id="314" parent="289" name="FKesbiv7as7o5yfxapkrhab9dgk">
+      <ColNames>orderId_orderId</ColNames>
+      <RefTableName>orders</RefTableName>
+      <RefColNames>orderId</RefColNames>
+    </foreign-key>
+    <column id="315" parent="290" name="orderId">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="316" parent="290" name="date">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="317" parent="290" name="code_code">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <index id="318" parent="290" name="FKm59r5lp7ucyhw9ogmiem27l8h">
+      <ColNames>code_code</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="319" parent="290" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>orderId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="320" parent="290" name="FKm59r5lp7ucyhw9ogmiem27l8h">
+      <ColNames>code_code</ColNames>
+      <RefTableName>customer</RefTableName>
+      <RefColNames>code</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

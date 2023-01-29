@@ -3,6 +3,7 @@ package lk.ijse.spring.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.Embeddable;
 import java.io.Serializable;
@@ -12,6 +13,6 @@ import java.io.Serializable;
 @Data
 @Embeddable
 public class OrderDetailID implements Serializable {
-    private Orders order;
-    private Item item;
+    private String orderId;
+    private String item;
 }

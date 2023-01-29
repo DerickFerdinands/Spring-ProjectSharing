@@ -14,7 +14,6 @@ public class Orders {
     @Id
     private String orderId;
     @ManyToOne
-    @JoinColumn(name = "customer_code")
-    private Customer Customer;
+    private Customer code;
     private String date;
 }

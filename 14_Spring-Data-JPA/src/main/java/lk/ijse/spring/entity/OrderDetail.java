@@ -3,6 +3,7 @@ package lk.ijse.spring.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,14 +12,14 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@IdClass(OrderDetailID.class)
+//@IdClass(OrderDetailID.class)
 public class OrderDetail {
 
     @EmbeddedId
     private OrderDetailID id;
     @OneToOne
-    private Orders order;
-    @ManyToMany(mappedBy = "orderDetail")
-    private List<Item> itemList;
+    private Orders orderId;
+    @ManyToOne
+    private Item item;
     private int qty;
 }
