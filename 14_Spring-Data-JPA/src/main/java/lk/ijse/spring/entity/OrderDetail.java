@@ -3,21 +3,20 @@ package lk.ijse.spring.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Type;
 
-import javax.persistence.*;
-import java.util.List;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-//@IdClass(OrderDetailID.class)
 public class OrderDetail {
 
     @EmbeddedId
     private OrderDetailID id;
-    @OneToOne
+    @ManyToOne
     private Orders orderId;
     @ManyToOne
     private Item item;
