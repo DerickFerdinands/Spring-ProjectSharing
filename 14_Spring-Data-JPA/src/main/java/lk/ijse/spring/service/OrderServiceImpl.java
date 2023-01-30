@@ -12,10 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.ArrayList;
+
 @Service
 @Transactional
-public class OrderServiceImpl implements OrderService{
+public class OrderServiceImpl implements OrderService {
     @Autowired
     OrderRepo repo;
     @Autowired
@@ -25,15 +25,16 @@ public class OrderServiceImpl implements OrderService{
 
     @Autowired
     OrderDetailRepo odRepo;
+
     @Override
-    public void saveOrder(PurchaseDTO dto){
-        if(repo.existsById(dto.getOid())){
-            throw new RuntimeException("Order Id "+dto.getOid()+" Already Exists!");
+    public void saveOrder(PurchaseDTO dto) {
+        if (repo.existsById(dto.getOid())) {
+            throw new RuntimeException("Order Id " + dto.getOid() + " Already Exists!");
         }
         Orders orders = new Orders(dto.getOid(), cRepo.getReferenceById(dto.getCusID()), dto.getDate(), null);
         repo.save(orders);
         dto.getOrderDetails().forEach(dtoP -> {
-            odRepo.save(new OrderDetail(new OrderDetailID(dto.getOid(), dtoP.getCode()),orders,iRepo.getReferenceById(dtoP.getCode()), Integer.parseInt(dtoP.getQty())));
+            odRepo.save(new OrderDetail(new OrderDetailID(dto.getOid(), dtoP.getCode()), orders, iRepo.getReferenceById(dtoP.getCode()), Integer.parseInt(dtoP.getQty())));
         });
 
     }
