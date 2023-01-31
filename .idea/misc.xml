@@ -9,6 +9,7 @@
       <list>
         <option value="$PROJECT_DIR$/SpringWithMaven/pom.xml" />
         <option value="$PROJECT_DIR$/14_Spring-Data-JPA/pom.xml" />
+        <option value="$PROJECT_DIR$/15_Spring_Boot/pom.xml" />
       </list>
     </option>
   </component>

@@ -10,28 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3de4e8d7-1582-4409-aa5a-2256dab9c0ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_25.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/14_Spring-Data-JPA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/14_Spring-Data-JPA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/service/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/entity/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/entity/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/repo/CustomerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/repo/CustomerRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/service/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/service/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/service/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/14_Spring-Data-JPA-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/service/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/entity/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/entity/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/repo/CustomerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/repo/CustomerRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/service/CustomerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/service/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/service/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/service/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/service/OrderServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +26,7 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,7 +52,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -79,15 +65,54 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\clones\Spring-ProjectSharing\14_Spring-Data-JPA\src\main\java\lk\ijse\spring" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="lk.ijse.spring.repo" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CustomerRepoTest">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRepoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="14_Spring-Data-JPA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.spring.repo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lk.ijse.spring.repo" />
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.spring.repo.CustomerRepoTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRepoTest.testOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="14_Spring-Data-JPA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.spring.repo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lk.ijse.spring.repo" />
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.spring.repo.CustomerRepoTest" />
+      <option name="METHOD_NAME" value="testOne" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,6 +205,12 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CustomerRepoTest" />
+        <item itemvalue="JUnit.CustomerRepoTest.testOne" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -205,7 +236,8 @@
       <workItem from="1675071101472" duration="2817000" />
       <workItem from="1675085417757" duration="605000" />
       <workItem from="1675089651217" duration="34000" />
-      <workItem from="1675130899623" duration="7423000" />
+      <workItem from="1675130899623" duration="14617000" />
+      <workItem from="1675158945816" duration="1803000" />
     </task>
     <servers />
   </component>
