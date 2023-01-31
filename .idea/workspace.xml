@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="14_Spring-Data-JPA:war exploded" />
+      <artifact name="15_Spring_Boot:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,11 +10,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3de4e8d7-1582-4409-aa5a-2256dab9c0ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/15_Spring_Boot_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/15_Spring_Boot_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_71.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_71.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_71.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/repo/CustomerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/repo/CustomerRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/service/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/14_Spring-Data-JPA/target/classes/lk/ijse/spring/service/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Spring_Boot/15_Spring_Boot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Spring_Boot/15_Spring_Boot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Spring_Boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Spring_Boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Spring_Boot/src/main/java/lk/ijse/spring/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/15_Spring_Boot/src/main/java/lk/ijse/spring/WebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Spring_Boot/src/main/java/lk/ijse/spring/config/JPAConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Spring_Boot/src/main/java/lk/ijse/spring/config/WebAppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Spring_Boot/src/main/java/lk/ijse/spring/config/WebRootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FRONTEND/purchase-order.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +102,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/15_Spring_Boot/src/main/java/lk/ijse/spring" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -63,6 +111,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\clones\Spring-ProjectSharing\15_Spring_Boot\src\main\java\lk\ijse\spring" />
       <recent name="C:\Projects\clones\Spring-ProjectSharing\14_Spring-Data-JPA\src\main\java\lk\ijse\spring" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -72,7 +121,7 @@
       <recent name="lk.ijse.spring.repo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerRepoTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.84">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -118,12 +167,12 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.84" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.84" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/14_Spring_Data_JPA_war_exploded/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/15_Spring_Boot_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="14_Spring-Data-JPA:war exploded">
+        <artifact name="15_Spring_Boot:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/14_Spring_Data_JPA_war_exploded" />
+            <option name="CONTEXT_PATH" value="/15_Spring_Boot_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -201,10 +250,15 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="14_Spring-Data-JPA:war exploded" />
+          <artifact name="15_Spring_Boot:war exploded" />
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.CustomerRepoTest" />
+      <item itemvalue="JUnit.CustomerRepoTest.testOne" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.84" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CustomerRepoTest" />
@@ -237,7 +291,7 @@
       <workItem from="1675085417757" duration="605000" />
       <workItem from="1675089651217" duration="34000" />
       <workItem from="1675130899623" duration="14617000" />
-      <workItem from="1675158945816" duration="1803000" />
+      <workItem from="1675158945816" duration="3693000" />
     </task>
     <servers />
   </component>
