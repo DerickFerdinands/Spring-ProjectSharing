@@ -21,8 +21,6 @@ public class Customer {
     private String dob;
     private String address;
     private String salary;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "code")
-    private List<Orders> orders;
 
 
 }

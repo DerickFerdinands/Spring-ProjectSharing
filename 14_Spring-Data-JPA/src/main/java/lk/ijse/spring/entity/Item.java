@@ -24,8 +24,7 @@ public class Item {
     private int buyingPrice;
     private int sellingPrice;
     private int qty;
-    @OneToMany(mappedBy = "item")
-    private List<OrderDetail> orderDetails;
+
 
 
 }
