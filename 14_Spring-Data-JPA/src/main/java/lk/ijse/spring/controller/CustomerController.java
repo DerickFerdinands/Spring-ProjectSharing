@@ -27,6 +27,13 @@ public class CustomerController {
         return new ResponseUtil("200", "Successful!", impl.getAllCustomers());
     }
 
+    @GetMapping(params = "{name}")
+    public ResponseUtil searchCustomerByName(String name){
+        CustomerDTO customer = impl.getCustomerByName(name);
+        return new ResponseUtil("200", "Customer Found!", customer);
+
+    }
+
     @PostMapping
     public ResponseUtil saveCustomer(CustomerDTO dto) {
         impl.addCustomer(dto);
